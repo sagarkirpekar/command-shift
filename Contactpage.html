@@ -9,25 +9,22 @@
     a{
         color:rgb(101, 66, 226);
     }
-        .contanier
+        .grid-contanier
         {
-            display:flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content:flex-start;
+            display:grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
             margin: 66.5031px;
             padding: 10px;
 
             
         }
         
-        .header 
+        .grid-header 
         {
-            height: 150px;
+           
             width: 100%;
-            /* border: 1px solid rgb(163, 14, 14); */
-            padding: 0px;
-            margin: 15px;
+            margin: 66.5031px;
             color: rgb(24, 18, 18);
             font-size: 120PX;
             text-align:left;
@@ -35,38 +32,50 @@
 
         }
         
-        .box
+        .grid-box
         {
            
-            width: 28%;
+           
             color: rgb(27, 22, 1);
             font-size: 15px;
             text-align: left;
             padding: 10px;
-            margin: 17px;
+            margin: 66.5031px;
             font-family: OCR A Extended;
             /* border: 1px solid rgb(112, 16, 16); */
             
         }
         @media screen and (max-width: 414px) 
         {
-            .box{
+            .grid-box{
                 width: 80%;
+                
             }
-        } 
+            .grid-contanier
+            {
+            display: inline;
+               
+            }
+            .grid-header
+            {
+                text-align: center;
+                margin: auto;
+            }
+            
+        }
           
     </style>
 </head>
 <body>
-    <div class="contanier">
+    
    
-        <div class="header"><b>Contact</b> </div>
-       
-        <div class="box"><H1>Contact Team</H1> To get in touch with Team at Command Shift, contact us at <P><a href="mailto:team@cmdshift.tech">"mailto:team@cmdshift.tech"</P></div></a>
-        <div class="box"><h1>Contact Sales</h1> To enquire about product licenses, pricing  and distributon, contact us at<P><a href="mailto:directors@cmdshift.tech"> "mailto:directors@cmdshift.tech"</P> </div></a>
-        <div class="box"><h1>Contact HR</h1> To enquire about jobs and hiring policies at Command Shift, contact us at <P><a href="mailto:hiring@cmdshift.tech"> "mailto:hiring@cmdshift.tech"</P></div></a>
-        <div class="box"><H1>Contact Director</H1> To enquire about investing, company policies, and at Command Shift, contact us at <P><a href="mailto:directors@cmdshift.tech">"mailto:directors@cmdshift.tech"</P></div></a>
-        <div class="box"><H1>Contact Developer</H1> For queries or complaints about the website design and functionality, contact the developer team at <p><a href="mailto:mail@capslock.team">"mailto:mail@capslock.team"</p></div></a>
+        <div class="grid-header"><b>Contact</b> </div>
+        <div class="grid-contanier">
+        <div class="grid-box"><H1>Contact Team</H1> To get in touch with Team at Command Shift, contact us at <P><a href="mailto:team@cmdshift.tech">"mailto:team@cmdshift.tech"</P></div></a>
+        <div class="grid-box"><h1>Contact Sales</h1> To enquire about product licenses, pricing  and distributon, contact us at<P><a href="mailto:directors@cmdshift.tech"> "mailto:directors@cmdshift.tech"</P> </div></a>
+        <div class="grid-box"><h1>Contact HR</h1> To enquire about jobs and hiring policies at Command Shift, contact us at <P><a href="mailto:hiring@cmdshift.tech"> "mailto:hiring@cmdshift.tech"</P></div></a>
+        <div class="grid-box"><H1>Contact Director</H1> To enquire about investing, company policies, and at Command Shift, contact us at <P><a href="mailto:directors@cmdshift.tech">"mailto:directors@cmdshift.tech"</P></div></a>
+        <div class="grid-box"><H1>Contact Developer</H1> For queries or complaints about the website design and functionality, contact the developer team at <p><a href="mailto:mail@capslock.team">"mailto:mail@capslock.team"</p></div></a>
     </div>
 </body>
 </html>

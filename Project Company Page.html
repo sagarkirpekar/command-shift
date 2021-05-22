@@ -7,26 +7,27 @@
     <title>projectcompancy</title>
 </head>
 <style>
-    .container
+    .grid-contanier
         {
-            display: flex;
-            flex-wrap: wrap;
-             align-content: center;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto auto;
+           
              margin:88.7031px;
              padding: 0px;
              width: 100%;
 
         }
-        .foot
+        .grid-foot
         {
-            display: flex;
+          
              align-content: center;
              margin: 88.7031px;
              padding: 0px;
              width: 100%;
            
         }
-        .work
+        .grid-work
             {
                 color: black;
               font-size: 30px;
@@ -37,18 +38,19 @@
             }
         
         
-        .header
+        .grid-header
         {
             width: 100%;
             padding: 10px;
-            margin: 0px;
+            margin: 88.7031px;
             color: black;
             font-size: 30px;
             font-family: OCR A Extended;
             text-align: left;
+            letter-spacing: 0.20em;
 
         }
-        .box
+        .grid-box
       {
    
         width: 46%;
@@ -64,27 +66,46 @@
 img{
     width: 65%;
 }
-@media screen and ( max-width:414px) 
+@media screen and (max-width: 414px) 
         {
-            .box{
+            .grid-box{
                 width: 80%;
+                text-align: center;
+                margin: auto;    
+            }
+            .grid-contanier
+            {
+                display: inline;
+                text-align: center;
+            }
+            .grid-header
+            {
+                text-align: center;
+                margin: auto;
+               
+            }
+            .grid-work
+            {
+               
+                text-align: center;
             }
         }
-     
-        
 </style>
 <body>
-    
-    <div class="container">
-        <div class="header"><h1><b>Projects</b></h1><b><p>Work in Progress</p></b></div>
-       
-
-        <div class="box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
-        <div class="box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div></div>
-       <div class="work"><b>Work Completed</b></div>
-        <div class="foot">
-        <div class="box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
-        <div class="box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
+      
+   
+        <div class="grid-header"><h1><b>Projects</b></h1><b><p>Work in Progress</p></b>
+     
+       </div>
+        <div class="grid-contanier">
+        <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
+        <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
+         </div>
+       <div class="grid-work"><b>Work Completed</b>
+        </div>
+        <div class="grid-container">
+        <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
+        <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
         </div>
   
   </div>

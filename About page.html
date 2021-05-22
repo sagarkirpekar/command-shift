@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
     <style>
-        .container
+        .grid-contanier
         {
-            display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-       margin: 44.3438px;
-       padding: 10px;
+            
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            align-content: center;
+            margin: 44.3438px;
+            /* padding: 10px; */
         }
         
-        .header
+        .grid-header
         {
             padding: 10px;
-            margin: 10px;
+            margin: 44.3438px;
             width: 100%;
             color:black;
             font-size: 22px;
@@ -29,14 +30,25 @@
           
 
         }
+        .grid-techo
+      {
+        padding: 10px;
+        margin: 44.3438px;
+            width: 100%;
+            color:black;
+            font-size: 25px;
+            text-align: left;
+            font-family: OCR A Extended;
+           
+      }
       
         
-        .box1
+        .grid-box1
         {
             
-            width: 29%;
+            /* width: 29%; */
             color:black;
-            font-size: 15px;
+            font-size: 17px;
             text-align: left;
             padding: 10px;
             margin: 10px;
@@ -47,8 +59,26 @@
 
         @media screen and (max-width: 414px) 
         {
-            .box1{
+            .grid-box1{
                 width: 80%;
+                text-align: center;
+                margin: auto;    
+            }
+            .grid-contanier
+            {
+                display: inline;
+                text-align: center;
+            }
+            .grid-header
+            {
+                text-align: center;
+                width: 92%;
+                margin: auto;
+            }
+            .grid-techo
+            {
+                margin: auto;
+                text-align: center;
             }
         }
         
@@ -57,19 +87,20 @@
 </head>
 <body>
     
-    <div class="container">
-        <div class="header" ><p><h1>  ABOUT </h1></P>
-            
-            An accessible real-time development and consultancy firm for the best possible quality of work with continuous integration and deployment for appropriate delivery times.
-        <p><u><b>Techonology stack</b></u></p></div>
-        
-        <div class="box1"><h1>MEAN</h1><p><u>MariaDB + ExpressJS + Angular + NodeJS</u></p>A versatile web deveplopment stack with scope for incredible asynchronosity and modularity <p> makes this the perfect choice of medium to large projects that need to be scalable.</div></a></p>>
-        
-        <div class="box1"><h1>ANGULARFIRE</h1><p><u>Angular + Firebase</p></u><p>The fastest stack with Angular, relying on Google's Firebase as the hosting, database, storage and authentication solutions. <p>This is perfect for PWAs or SPAs with tighter deadlines.</p></p></div>
-        <div class="box1"><H1>DJANGO</H1><p><u>A PYTHONE WEB FRAMEWORK</u></p> absolutely open source versatile web stack built in Python design with scalability, security, and quick project deadlines <p>in mind. Perfect for medium to large projects, can work with Angular for that SPA experience. </p></div>
-        <div class="box1"><H1>.NET</H1><p><u>.NET CORE| .NET FRAMEWORK</u></p>The ultimate stack for larger projects with high complexity where performance <p>cannot be compromised. This has added advantage of extending to both web and native platforms.</p></div>
-        <div class="box1"><h1>Swift</h1><p><u>Swift Programming Language | SwiftUI | Kitura</u></p>Like everything Apple, Swift Programming Language is focused on being the most accessible, robust and secure option.<p> But is currently limited to iOS and macOS development, and some server side applications with IBM's Kitura Framework</p></div>
+    
+        <div class="grid-header" ><p><h1>  ABOUT </h1></P>
+        An accessible real-time development and consultancy firm for the best possible quality of work with continuous integration and deployment for appropriate delivery times.
+        </div> 
+        <div class="grid-techo"><p><u><b>Techonology stack</b></u></p>
+        </div>
+        <div class="grid-contanier">
+        <div class="grid-box1"><h1>MEAN</h1><p><u>MariaDB + ExpressJS + Angular + NodeJS</u></p>A versatile web deveplopment stack with scope for incredible asynchronosity and modularity <p> makes this the perfect choice of medium to large projects that need to be scalable.</a></p></div>
+        <div class="grid-box1"><h1>ANGULARFIRE</h1><p><u>Angular + Firebase</p></u><p>The fastest stack with Angular, relying on Google's Firebase as the hosting, database, storage and authentication solutions. <p>This is perfect for PWAs or SPAs with tighter deadlines.</p></p></div>
+        <div class="grid-box1"><H1>DJANGO</H1><p><u>A PYTHONE WEB FRAMEWORK</u></p> absolutely open source versatile web stack built in Python design with scalability, security, and quick project deadlines <p>in mind. Perfect for medium to large projects, can work with Angular for that SPA experience. </p></div>
+        <div class="grid-box1"><H1>.NET</H1><p><u>.NET CORE| .NET FRAMEWORK</u></p>The ultimate stack for larger projects with high complexity where performance <p>cannot be compromised. This has added advantage of extending to both web and native platforms.</p></div>
+        <div class="grid-box1"><h1>Swift</h1><p><u>Swift Programming Language | SwiftUI | Kitura</u></p>Like everything Apple, Swift Programming Language is focused on being the most accessible, robust and secure option.<p> But is currently limited to iOS and macOS development, and some server side applications with IBM's Kitura Framework</p></div>
     </div>
+
 
     
 </body>
