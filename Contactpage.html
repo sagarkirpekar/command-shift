@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <style>
+        body{
+            background-color: #b22222;
+        }
     a{
-        color:rgb(101, 66, 226);
+        color:bisque;
     }
         .grid-contanier
         {
@@ -26,7 +29,7 @@
             width: 100%;
             margin: 66.5031px;
             color: rgb(24, 18, 18);
-            font-size: 120PX;
+            font-size: 13vw;
             text-align:left;
             font-family: OCR A Extended;
 
@@ -45,10 +48,13 @@
             /* border: 1px solid rgb(112, 16, 16); */
             
         }
-        @media screen and (max-width: 414px) 
+        @media screen and (min-width: 414px) 
         {
-            .grid-box{
+            .grid-box
+            {
                 width: 80%;
+                /* margin: auto; */
+              
                 
             }
             .grid-contanier
@@ -58,11 +64,15 @@
             }
             .grid-header
             {
-                text-align: center;
+               
                 margin: auto;
+                text-align: center;
             }
             
+           
         }
+
+        
           
     </style>
 </head>

@@ -7,15 +7,31 @@
     <title>projectcompancy</title>
 </head>
 <style>
+     body{
+            background-color: #b22222;
+        }
+        a{
+        color:bisque;
+    }
     .grid-contanier
         {
             display: grid;
             grid-template-columns: auto auto;
             grid-template-rows: auto auto auto auto;
-           
-             margin:88.7031px;
-             padding: 0px;
+            
              width: 100%;
+
+        }
+        .grid-header
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 88.7031px;
+            color: black;
+            font-size: 30px;
+            font-family: OCR A Extended;
+            text-align: left;
+            letter-spacing: 0.20em;
 
         }
         .grid-foot
@@ -33,23 +49,12 @@
               font-size: 30px;
            text-align: left;
              font-family: OCR A Extended;
-             margin: 88.7031px;;
-             padding: 0;        
+                 /* margin: 10px; */
+                 padding: 10px;   
             }
         
         
-        .grid-header
-        {
-            width: 100%;
-            padding: 10px;
-            margin: 88.7031px;
-            color: black;
-            font-size: 30px;
-            font-family: OCR A Extended;
-            text-align: left;
-            letter-spacing: 0.20em;
-
-        }
+        
         .grid-box
       {
    
@@ -82,6 +87,7 @@ img{
             {
                 text-align: center;
                 margin: auto;
+                letter-spacing: 0em;
                
             }
             .grid-work
@@ -94,19 +100,21 @@ img{
 <body>
       
    
-        <div class="grid-header"><h1><b>Projects</b></h1><b><p>Work in Progress</p></b>
-     
-       </div>
+        
+         <div class="grid-header"><h1><b>Projects</b></h1><b><p>Work in Progress</p></b>
+   
         <div class="grid-contanier">
         <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
         <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
-         </div>
-       <div class="grid-work"><b>Work Completed</b>
         </div>
-        <div class="grid-container">
+    </div>
+    <div class="grid-header">
+       <div class="grid-work"><b>Work Completed</b> </div>
+        <div class="grid-contanier">
         <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
         <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
         </div>
+    </div>
   
   </div>
 </body>

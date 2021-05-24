@@ -6,13 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parteners</title>
     <style>
+         body{
+            background-color: #b22222;
+        }
 .grid-contanier
+{
+    /* display: grid; */
+    /* grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto; */
+    align-content: center;
+    margin: 91.5px;
+    padding: 50px;
+    
+
+}
+.grid-contanier1
 {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto auto;
     align-content: center;
-    margin: 36.5px;
+    margin: 91.5px;
     padding: 10px;
     
 
@@ -25,8 +39,8 @@
     font-family: OCR A Extended;
     color: black;
     text-align: left;
-    padding: 0px;
-    margin: 30px;
+    /* padding: 0px;
+    margin: 30px; */
 
 }
 .grid-commandshiftfont
@@ -70,9 +84,15 @@
                 text-align: center;
                 
             }
-            .grid-contanier
+            .grid-contanier1
             {
             display: inline;
+               
+            }
+            .grid-contanier
+            {
+            margin: auto;
+            padding: 0px;
                
             }
             .grid-header
@@ -80,6 +100,7 @@
                 text-align: center;
                 margin: auto;
                 letter-spacing: 0em;
+               
             }
             .grid-fbox
             {
@@ -89,6 +110,7 @@
             {
                 text-align: center;
                 margin: auto;
+                letter-spacing: 0em;
             }
         }
           
@@ -103,18 +125,15 @@
 <body>
     
     <div class="grid-contanier">
-    <div class="grid-header"><h1 style="letter-spacing: 0.194em;">Partners</h1></div>
-    </div>
-
-    <div class="grid-contanier">
-    <div class="grid-commandshiftfont"><p>Command Shift assembles the best teams in their domains for your specific requirements to deliver a well designed, accessible and scalable product.</p></div>
-    </div>
-
-    <div class="grid-contanier">
-    <div class="grid-fbox"><p>Foundation Partners</p></div>
-    </div>
     
-    <div class="grid-contanier">
+    <div class="grid-header">
+    <h1 style="letter-spacing: 0.125em;">Partners</h1>
+   
+    <div class="grid-commandshiftfont"><p>Command Shift assembles the best teams in their domains for your specific requirements to deliver a well designed, accessible and scalable product.</p></div>
+    <div class="grid-fbox"><p>Foundation Partners</p></div>
+</div>  
+</div>
+ <div class="grid-contanier1">
     <div class="grid-box"><a href="d..jpg"><img src="d..jpg" alt="Paris" width="100%" height="100%"></a></div>
     <div class="grid-box"><a href="d..jpg"><img src="d..jpg" alt="Paris" width="100%" height="100%"></a></div>
     <div class="grid-box"><a href="d..jpg"><img src="d..jpg" alt="Paris" width="100%" height="100%"></a></div>
