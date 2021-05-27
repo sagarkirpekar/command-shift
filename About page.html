@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
     <style>
-         body{
+
+         body
+        {
             background-color: #b22222;
         }
         .grid-contanier
@@ -17,14 +19,14 @@
             grid-template-rows: auto auto;
             align-content: center;
             margin: 44.3438px;
-            /* padding: 10px; */
+            
         }
         
         .grid-header
         {
             padding: 10px;
             margin: 44.3438px;
-            width: 100%;
+            width: 70%;
             color:black;
             font-size: 20px;
             text-align: left;
@@ -35,9 +37,9 @@
         }
         .grid-techo
       {
-        padding: 10px;
-        margin: 44.3438px;
-            width: 100%;
+            padding: 10px;
+            margin: 44.3438px;
+            width: 80%;
             color:black;
             font-size: 25px;
             text-align: left;
@@ -49,7 +51,7 @@
         .grid-box1
         {
             
-            /* width: 29%; */
+            width: 80%;
             color:black;
             font-size: 17px;
             text-align: left;
@@ -59,32 +61,102 @@
            
      
         }
+        /* --------------------------------------------------------------------------------------------------------------------------- */
 
-        @media screen and (max-width: 414px) 
+        @media screen and (max-width: 1024px) 
         {
-            .grid-box1{
-                width: 80%;
-                text-align: center;
-                margin: auto;    
+            .grid-box1
+            {
+             
+              font-size: 35px;
+              text-align: center;
+              width: 80%;
+              margin: auto;
+              
             }
             .grid-contanier
             {
-               display: inline-block;
+                grid-template-columns: none;
+                font-size: 35px;
+            }
+            .grid-header
+            {
+               
+                margin: auto;
+                font-size: 40px;
                 text-align: center;
+            }
+            .grid-techo
+            {
+                font-size: 40px;
+                text-align: center;
+                margin: auto;
+            }
+        }
+
+        /* ----------------------------------------------------------------------------------------------------------------------- */
+        @media screen and (max-width: 768px) 
+        {
+            .grid-box1
+            {
+             
+                font-size: 25px;
+                margin: auto;
+                text-align: center;
+                width: 80%;
+              
+            }
+            .grid-contanier
+            {
+                grid-template-columns: none;
+                font-size: 23px;
+               
+            }
+            .grid-header
+            {
+               
+                margin: auto;
+                font-size: 35px;
+                text-align: center;
+            }
+            .grid-techo
+            {
+                font-size: 35px;
+                text-align: center;
+                margin: auto;
+            }
+        }
+        
+        /* ---------------------------------------------------------------------------------------------------------------------------------- */
+        @media screen and (max-width: 414px) 
+        {
+            .grid-box1{
+                width: 81%;
+                text-align: center;
+                margin: auto;  
+                font-size: 17px;
+            }
+            .grid-contanier
+            {
+                display: inline;
+                text-align: center;
+                font-size: 17px;
             }
             .grid-header
             {
                 text-align: center;
-                width: 92%;
+                width: 91%;
                 margin: auto;
+                font-size: 17px;
             }
             .grid-techo
             {
                 margin: auto;
                 text-align: center;
+                font-size: 17px;
             }
         }
-        
+       
         
     </style>
 </head>
@@ -94,8 +166,10 @@
         <div class="grid-header" ><p><h1>  ABOUT </h1></P>
         An accessible real-time development and consultancy firm for the best possible quality of work with continuous integration and deployment for appropriate delivery times.
         </div> 
+
         <div class="grid-techo"><p><u><b>Techonology stack</b></u></p>
         </div>
+
         <div class="grid-contanier">
         <div class="grid-box1"><h1>MEAN</h1><p><u style="color: #f29e9e">MariaDB + ExpressJS + Angular + NodeJS</u></p>A versatile web deveplopment stack with scope for incredible asynchronosity and modularity <p> makes this the perfect choice of medium to large projects that need to be scalable.</a></p></div>
         <div class="grid-box1"><h1>ANGULARFIRE</h1><p><u style="color: #f29e9e">Angular + Firebase</p></u><p>The fastest stack with Angular, relying on Google's Firebase as the hosting, database, storage and authentication solutions. <p>This is perfect for PWAs or SPAs with tighter deadlines.</p></p></div>

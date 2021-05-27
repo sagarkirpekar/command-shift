@@ -10,15 +10,16 @@
      body{
             background-color: #b22222;
         }
-        a{
+        a
+        {
         color:bisque;
-    }
+        }
     .grid-contanier
         {
             display: grid;
             grid-template-columns: auto auto;
             grid-template-rows: auto auto auto auto;
-            
+            align-content: center;
              width: 100%;
 
         }
@@ -45,12 +46,11 @@
         }
         .grid-work
             {
-                color: black;
-              font-size: 30px;
-           text-align: left;
-             font-family: OCR A Extended;
-                 /* margin: 10px; */
-                 padding: 10px;   
+            color: black;
+            font-size: 30px;
+            text-align: left;
+            font-family: OCR A Extended;
+            padding: 10px;   
             }
         
         
@@ -58,25 +58,29 @@
         .grid-box
       {
    
-        width: 46%;
-        padding: 0px;
-        margin: 10px;
-        color: black;
-        font-size: 20px;
-        text-align: center;
-        font-family: OCR A Extended;
-    
-
-}
-img{
-    width: 65%;
-}
-@media screen and (max-width: 414px) 
+            width: 46%;
+            padding: 0px;
+            margin: 10px;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            font-family: OCR A Extended;
+      }
+        img
         {
-            .grid-box{
+              width: 65%;
+        }
+ /* ----------------------------------------------------------------------------------------------------------------------------------------- */
+ 
+ @media screen and (max-width: 1024px) 
+        {
+            .grid-box
+            {
                 width: 80%;
                 text-align: center;
                 margin: auto;    
+                padding: 10px;
+                font-size: 50px;
             }
             .grid-contanier
             {
@@ -88,11 +92,74 @@ img{
                 text-align: center;
                 margin: auto;
                 letter-spacing: 0em;
-               
+                font-size: 50px;
             }
             .grid-work
             {
                
+                text-align: center;
+                font-size: 50px;
+            }
+            }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) 
+        {
+            .grid-box
+            {
+                width: 80%;
+                text-align: center;
+                margin: auto;    
+                padding: 10px;
+                font-size: 30px;
+            }
+            .grid-contanier
+            {
+                display: inline;
+                text-align: center;
+            }
+            .grid-header
+            {
+                text-align: center;
+                margin: auto;
+                letter-spacing: 0em;
+                font-size: 40px;
+            }
+            .grid-work
+            {
+               
+                text-align: center;
+                font-size: 40px;
+            }
+            }
+            
+        /* ------------------------------------------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 414px) 
+        {
+            .grid-box
+            {
+                width: 80%;
+                text-align: center;
+                margin: auto;    
+                padding: 10px;
+                font-size: 20px;
+            }
+            .grid-contanier
+            {
+                display: inline;
+                text-align: center;
+                font-size: 30px;
+            }
+            .grid-header
+            {
+                text-align: center;
+                margin: auto;
+                letter-spacing: 0em;
+                font-size: 30px;  
+            }
+            .grid-work
+            {
+                font-size: 30px;
                 text-align: center;
             }
         }
@@ -101,21 +168,20 @@ img{
       
    
         
-         <div class="grid-header"><h1><b>Projects</b></h1><b><p>Work in Progress</p></b>
+        <div class="grid-header"><h1><b>Projects</b></h1><b><p>Work in Progress</p></b>
    
         <div class="grid-contanier">
         <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
         <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
         </div>
-    </div>
-    <div class="grid-header">
-       <div class="grid-work"><b>Work Completed</b> </div>
+        </div>
+        <div class="grid-header">
+        <div class="grid-work"><b>Work Completed</b> </div>
         <div class="grid-contanier">
         <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
         <div class="grid-box"><img src="d..jpg"><p>In Collabaration With </p><a href="Capslock Design & Analytics">Capslock Design & Analytics</a></div>
         </div>
-    </div>
-  
-  </div>
+        </div>
+        </div>
 </body>
 </html>

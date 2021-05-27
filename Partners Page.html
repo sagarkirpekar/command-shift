@@ -6,138 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parteners</title>
     <style>
-         body{
+         body
+         {
             background-color: #b22222;
         }
-.grid-contanier
-{
-    /* display: grid; */
-    /* grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto auto auto; */
-    align-content: center;
-    margin: 91.5px;
-    padding: 50px;
-    
-
-}
-.grid-contanier1
-{
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto auto auto;
-    align-content: center;
-    margin: 91.5px;
-    padding: 10px;
-    
-
-}
-.grid-header
-{
+       .grid-contanier
+        {
+           align-content: center;
+           margin: 91.5px;
+           padding: 50px
+        }
+        .grid-header
+        {
    
-    width: 100%;
-    font-size: 230%;
-    font-family: OCR A Extended;
-    color: black;
-    text-align: left;
-    /* padding: 0px;
-    margin: 30px; */
+          width: 80%;
+          font-size: 40px;
+          font-family: OCR A Extended;
+          color: black;
+          text-align: left;
+           margin: 91.5px; 
+        }
+        .grid-commandshiftfont
+        {
+          font-size: 22px;
+          font-family: OCR A Extended;
+          color: black;
+          text-align: left;
+          margin: 10px;
+         padding: 10px;
+         }
 
-}
-.grid-commandshiftfont
-{
-    font-size: 22px;
-    font-family: OCR A Extended;
-    color: black;
-    text-align: left;
-    margin: 10px;
-    padding: 10px;
-
-}
-
-.grid-fbox
-{
+         .grid-fbox
+        {     
     
-    width:100%;
-    padding: 0px;
-    margin: 19px;
-    font-size: 25px;
-    font-family:OCR A Extended;
-    color: black;
-    text-align: left;
+          width:80%;
+          padding: 0px;
+          margin: 19px;
+          font-size: 25px;
+          font-family:OCR A Extended;
+          color: black;
+          text-align: left;
+        }
+        .grid-box
+        {
+         height: 130px;
+         width:79%;
+         padding: 11px;
+         margin: 15px;
+        }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and  (max-width: 1024px) 
+        {
+            
+            .grid-contanier
+             {
+                 margin: auto;
+                 padding: 0px;
+                 font-size: 25px;
+                 text-align: -webkit-center;
+             }
+             .grid-commandshiftfont
+             {
+                 font-size: 50px;
+                 text-align: center;
+                 margin: auto;
+             }
+             .grid-fbox
+             {
+                 font-size: 50px;
+                 text-align: center;
+                 margin: auto;
+             }
+             .grid-header
+             {
+                text-align: center;
+                font-size: 50px;
+             }
+        }
 
 
-}
-.grid-box
-{
-    height: 130px;
-    width:79%;
-    /* border: 2px solid rgb(36, 14, 14); */
-    padding: 11px;
-    margin: 15px;
-    
-}
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and  (max-width: 768px) 
+        {
+             .grid-contanier
+             {
+                 margin: auto;
+                 padding: 0px;
+                 font-size: 25px;
+                 text-align: -webkit-center;
+             }
+             .grid-commandshiftfont
+             {
+                 font-size: 25px;
+                 text-align: center;
+                 margin: auto;
+             }
+             .grid-fbox
+             {
+                 font-size: 50px;
+                 text-align: center;
+                 margin: auto;
+             }
+             .grid-header
+             {
+                text-align: center;
+                margin: auto;
+             }
+        }
+
+        /* ----------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 414px) 
         {
-            .grid-box{
+            .grid-box
+            {
                 width: 80%;
                 margin: auto;
                 text-align: center;
-                
+                font-size: 20px;
             }
-            .grid-contanier1
-            {
-            display: inline;
-               
-            }
+            
             .grid-contanier
             {
-            margin: auto;
-            padding: 0px;
-               
+                margin: auto;
+                padding: 0px;
+                font-size: 20px;  
             }
             .grid-header
             {
                 text-align: center;
+                font-size: 25px;
                 margin: auto;
-                letter-spacing: 0em;
-               
+                width:80%   
             }
             .grid-fbox
             {
                 text-align: center;
+                font-size: 25px;
             }
             .grid-commandshiftfont
             {
                 text-align: center;
-                margin: auto;
+                font-size: 20px;
                 letter-spacing: 0em;
+                padding: 12px;
             }
         }
-          
-        
-
-
-
-
 
  </style>
 </head>
 <body>
     
-    <div class="grid-contanier">
-    
-    <div class="grid-header">
-    <h1 style="letter-spacing: 0.125em;">Partners</h1>
+        <div class="grid-contanier">
+        <div class="grid-header">
+        <h1>Partners</h1>
+        </div> 
    
-    <div class="grid-commandshiftfont"><p>Command Shift assembles the best teams in their domains for your specific requirements to deliver a well designed, accessible and scalable product.</p></div>
-    <div class="grid-fbox"><p>Foundation Partners</p></div>
-</div>  
-</div>
- <div class="grid-contanier1">
-    <div class="grid-box"><a href="d..jpg"><img src="d..jpg" alt="Paris" width="100%" height="100%"></a></div>
-    <div class="grid-box"><a href="d..jpg"><img src="d..jpg" alt="Paris" width="100%" height="100%"></a></div>
-    <div class="grid-box"><a href="d..jpg"><img src="d..jpg" alt="Paris" width="100%" height="100%"></a></div>
-    </div>
+        <div class="grid-commandshiftfont"><p>Command Shift assembles the best teams in their domains for your specific requirements to deliver a well designed, accessible and scalable product.</p></div>
+        <div class="grid-fbox"><p>Foundation Partners</p></div>
+        </div>
+        <div class="grid-contanier">
+        <div class="grid-box"><a href="d..jpg"><img src="d..jpg" alt="Paris" width="100%" height="100%"></a></div>
+        <div class="grid-box"><a href="d..jpg"><img src="d..jpg" alt="Paris" width="100%" height="100%"></a></div>
+        <div class="grid-box"><a href="d..jpg"><img src="d..jpg" alt="Paris" width="100%" height="100%"></a></div>
+       </div>
 
 </body>
 </html>

@@ -6,71 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <style>
-        body{
+        body
+        {
             background-color: #b22222;
         }
-    a{
+        a
+        {
         color:bisque;
-    }
+        }
         .grid-contanier
         {
             display:grid;
             grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto;
-            margin: 66.5031px;
-            padding: 10px;
-
-            
+            grid-template-rows: auto auto auto;
+            align-content: center;
         }
         
         .grid-header 
         {
            
-            width: 100%;
+            width: 70%;
+            padding: 10px;
+            color: black;
+            font-size: 50px;
             margin: 66.5031px;
-            color: rgb(24, 18, 18);
-            font-size: 13vw;
-            text-align:left;
             font-family: OCR A Extended;
-
         }
         
-        .grid-box
+        .grid-box1
         {
-           
-           
-            color: rgb(27, 22, 1);
+            color: black;
             font-size: 15px;
             text-align: left;
             padding: 10px;
             margin: 66.5031px;
             font-family: OCR A Extended;
-            /* border: 1px solid rgb(112, 16, 16); */
-            
         }
-        @media screen and (min-width: 414px) 
-        {
-            .grid-box
+        
+        /* -------------------------------------------------------------------------------------------------------------------------------- */
+            @media screen and (max-width: 1024px) 
             {
-                width: 80%;
-                /* margin: auto; */
-              
-                
+            .grid-box1
+            {
+                width: 90%;
+              font-size: 40px;
+              text-align: center;
+              margin: auto;
             }
             .grid-contanier
             {
-            display: inline;
+                grid-template-columns: none;
+                font-size: 40px;
+            }
+            .grid-header
+            {
+               
+                margin: auto;
+                font-size: 55px;
+                text-align: center;
+            }
+            
+        }
+
+        /* ------------------------------------------------------------------------------------------------------------------------------ */
+            @media screen and (max-width: 768px) 
+            {
+            .grid-box1
+            {
+              width: 90%;
+              font-size: 30px;
+              margin: auto;
+              padding: 0px;
+              text-align: center;
+              
+            }
+            .grid-contanier
+            {
+                grid-template-columns: none;
+                font-size: 30px;
                
             }
             .grid-header
             {
                
                 margin: auto;
+                font-size: 43px;
                 text-align: center;
             }
             
-           
         }
+
+        /* ----------------------------------------------------------------------------------------------------------------------------- */
+        
+        @media screen and (max-width: 414px) 
+        {
+            .grid-box1
+            {
+                width: 100%;
+                text-align: center;
+                margin: auto;  
+                font-size: 15px;
+            }
+            .grid-contanier
+            {
+               display: inline;
+                text-align: center;
+                font-size: 17px;
+                
+            }
+            .grid-header
+            {
+                text-align: center;
+                margin: auto;
+                font-size: 27px;
+            }
+            
+        }
+       
 
         
           
@@ -78,14 +130,19 @@
 </head>
 <body>
     
-   
-        <div class="grid-header"><b>Contact</b> </div>
+  
+       
+        
+        <div class="grid-header"><b><h1>Contact</h1></b>
+       
         <div class="grid-contanier">
-        <div class="grid-box"><H1>Contact Team</H1> To get in touch with Team at Command Shift, contact us at <P><a href="mailto:team@cmdshift.tech">"mailto:team@cmdshift.tech"</P></div></a>
-        <div class="grid-box"><h1>Contact Sales</h1> To enquire about product licenses, pricing  and distributon, contact us at<P><a href="mailto:directors@cmdshift.tech"> "mailto:directors@cmdshift.tech"</P> </div></a>
-        <div class="grid-box"><h1>Contact HR</h1> To enquire about jobs and hiring policies at Command Shift, contact us at <P><a href="mailto:hiring@cmdshift.tech"> "mailto:hiring@cmdshift.tech"</P></div></a>
-        <div class="grid-box"><H1>Contact Director</H1> To enquire about investing, company policies, and at Command Shift, contact us at <P><a href="mailto:directors@cmdshift.tech">"mailto:directors@cmdshift.tech"</P></div></a>
-        <div class="grid-box"><H1>Contact Developer</H1> For queries or complaints about the website design and functionality, contact the developer team at <p><a href="mailto:mail@capslock.team">"mailto:mail@capslock.team"</p></div></a>
-    </div>
+        <div class="grid-box1"><H1>Contact Team</H1> To get in touch with Team at Command Shift, contact us at <P><a href="mailto:team@cmdshift.tech">"mailto:team@cmdshift.tech"</P></div></a>
+        <div class="grid-box1"><h1>Contact Sales</h1> To enquire about product licenses, pricing  and distributon, contact us at<P><a href="mailto:directors@cmdshift.tech"> "mailto:directors@cmdshift.tech"</P> </div></a>
+        <div class="grid-box1"><h1>Contact HR</h1> To enquire about jobs and hiring policies at Command Shift, contact us at <P><a href="mailto:hiring@cmdshift.tech"> "mailto:hiring@cmdshift.tech"</P></div></a>
+        <div class="grid-box1"><H1>Contact Director</H1> To enquire about investing, company policies, and at Command Shift, contact us at <P><a href="mailto:directors@cmdshift.tech">"mailto:directors@cmdshift.tech"</P></div></a>
+        <div class="grid-box1"><H1>Contact Developer</H1> For queries or complaints about the website design and functionality, contact the developer team at <p><a href="mailto:mail@capslock.team">"mailto:mail@capslock.team"</p></div></a>
+   
+</div>
+</div>
 </body>
 </html>
